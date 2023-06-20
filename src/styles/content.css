@@ -1,0 +1,49 @@
+.content{
+    position: absolute;
+    width:97%;
+    left: 1.5%;
+    right:1.5%;
+    top:200px;
+    
+}
+.category{
+    position: fixed;
+    top:150px;
+    width:15%;
+    height: 400px;
+    grid-template-columns: 1fr;
+   
+}
+.category button{
+    padding: 5px;
+    border:0;
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    border-radius: 30px;
+    margin: 20px;
+    background-color: #C5C5C5;
+}
+.category button:hover{
+    box-shadow:  0 4px 4px 0 #ee9ca7;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+#all{
+    background-color: #ee9ca7;
+}
+.content .content_cards{
+    left:20%;
+    position: absolute;
+    width:80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+   
+}
+@media (max-width:1062px) {
+    .content .content_cards{
+        grid-template-columns: 1fr;
+    }
+}
